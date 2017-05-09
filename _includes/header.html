@@ -1,0 +1,21 @@
+<div class="mobile-header">
+  <nav class="mobile-navigation">
+    <a href="{{site.baseurl}}/" class="{% if page.url =='/' %}current-page{% endif %}">NASLOVNA</a>
+    <a href="{{site.baseurl}}/o-nama/" class="{% if page.url contains 'o-nama' %}current-page{% endif %}">O NAMA</a>
+    <a href="{{site.baseurl}}/proces/" class="{% if page.url contains 'proces' %}current-page{% endif %}">PROCES</a>
+    <a href="{{site.baseurl}}/kontakt/" class="{% if page.url contains 'kontakt' %}current-page{% endif %}">KONTAKT</a>
+  </nav>
+</div>
+<header class="novis-header">
+  <div class="mobile-nav-toggle">
+    <span></span>
+  </div>
+  <nav class="novis-navigation">
+      <a href="{{site.baseurl}}/" class="{% if page.url =='/' %}current-page{% endif %}">NASLOVNA</a>
+      <a href="{{site.baseurl}}/o-nama/" class="{% if page.url contains 'o-nama' %}current-page{% endif %}">O NAMA</a>
+      <a href="{{site.baseurl}}/"><img src="/assets/img/logo.svg" alt="" class="navigation-logo" header-logo></a>
+      <a href="{{site.baseurl}}/proces/" class="{% if page.url contains 'proces' %}current-page{% endif %}">PROCES</a>
+      <a href="{{site.baseurl}}/kontakt/" class="{% if page.url contains 'kontakt' %}current-page{% endif %}">KONTAKT</a>
+  </nav>
+  <a href="{{site.url}}/"><img src="/assets/img/logo.svg" alt="" class="mobile-logo" mobile-logo></a>
+</header>

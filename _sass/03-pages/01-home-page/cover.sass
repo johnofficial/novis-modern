@@ -1,0 +1,76 @@
+.cover
+  height: 100vh
+  width: 100%
+  overflow: hidden
+  background-image: url(/assets/img/cover.png)
+  background-size: cover
+  background-repeat: no-repeat
+  background-attachment: fixed
+  position: relative
+.gradient
+  height: 100vh
+  background: linear-gradient(-45deg, #FFC800, #EE576E, #9423C9)
+  opacity: 0.9
+  img
+    position: absolute
+    opacity: 0.1
+    width: 100%
+.cuter
+  content: ''
+  position: absolute
+  top: 90vh
+  left: 0
+  background: $light-bgc
+  width: 100%
+  height: 100vh
+  transform: skewY(5deg)
+  opacity: 1
+  z-index: 3
+.text-intro
+  position: absolute
+  top: 220px
+  left: 100px
+  width: 500px
+  transform: translateX(-100vw)
+  transition: 1s
+
+  h1
+    font-size: 36px
+    font-weight: 200
+    color: $text-light
+    b
+      font-size: 52px
+      font-weight: 700
+.photo-intro
+  position: absolute
+  top: 220px
+  right: 100px
+  width: 500px
+  height: 400px
+
+.return-element
+  transform: translateX(0px)
+  transform: translateY(0px)
+@media(max-width: 775px)
+  .photo-intro
+    right: -80px
+    bottom: 80px
+    top: auto
+  .text-intro
+    left: 60px
+@media(max-width: 480px)
+  .photo-intro
+    width: 300px
+    height: 250px
+    right: -80px
+    top: auto
+    bottom: 80px
+  .text-intro
+    left: 10px
+    width: 250px
+    top: 150px
+    z-index: 3
+    h1
+      font-size: 22px
+      b
+        font-size: 22px
